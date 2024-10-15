@@ -22,8 +22,11 @@ qscatter <- function(data, x, y){
 
   ggplot(data, aes(x = {{x}}, y = {{y}})) +
     geom_point() +
-    geom_smooth(method = "lm", se = FALSE, linetype = "dashed", color = "cornflowerblue")+
+    geom_smooth(method = "lm", se = FALSE, color = "cornflowerblue")+
     theme_minimal()+
     labs(title = gtitle,
          subtitle = stitle)
 }
+
+
+
